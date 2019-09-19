@@ -92,6 +92,22 @@ button {
   border-radius: 50px;
  }
 
+ * {
+   box-sizing: border-box;
+ }
+
+ .title {
+   text-transform: uppercase;
+   color: @title-color;
+   font-size: 1.2rem;
+   .Ubuntu;
+ }
+ p {
+   .Ubuntu;
+   color: @text-color;
+   font-size: 1.2rem;
+ }
+
 /* Main styles */
 
 .header {
@@ -174,11 +190,19 @@ button {
 .advantages {
   background: @bg-gray;
   text-align: center;
-  &-title {
-    padding-bottom: 2rem;
-    text-transform: uppercase;
-    border-bottom: 2px solid #e2e3e4;
-  }
   
+  &-box {
+    &-img {
+      height: 4rem;
+    }
+    &-title {
+      margin-top: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid #e2e3e4;
+    }
+    &-text {
+      margin-top: 3rem;
+    }
+  }
 }
 
