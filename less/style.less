@@ -97,15 +97,17 @@ button {
  }
 
  .title {
-   text-transform: uppercase;
-   color: @title-color;
-   font-size: 1.2rem;
-   .Ubuntu;
+   h1 {
+    text-transform: uppercase;
+    color: @title-color;
+    font-size: 2rem;
+    .Ubuntu;
+   }
  }
  p {
    .Ubuntu;
    color: @text-color;
-   font-size: 1.2rem;
+   font-size: 1.5rem;
  }
 
 /* Main styles */
@@ -202,6 +204,25 @@ button {
     }
     &-text {
       margin-top: 3rem;
+    }
+  }
+}
+
+/* Possibility */
+.possibility {
+  background: @bg-light;
+  &-signature{
+    &-title {
+      padding: 4rem 0 5rem 0;
+    }
+    &-text {
+      padding-bottom: 3rem; 
+    }
+    &-button {
+      button {
+        padding: 1rem 2rem;
+        text-transform: unset;
+      }
     }
   }
 }
