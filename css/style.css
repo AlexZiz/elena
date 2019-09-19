@@ -40,7 +40,6 @@ html {
 .header {
   background: url(../img/bg/header-bg.png) center no-repeat;
   background-size: 100%;
-  min-height: 60rem;
 }
 .header-logo {
   margin-top: 6rem;
