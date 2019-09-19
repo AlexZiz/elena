@@ -41,7 +41,7 @@ html {
 /* Main styles */
 .header {
   background: url(../img/bg/header-bg.png) center no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .header-logo {
   margin: 6rem auto;
