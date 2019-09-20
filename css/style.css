@@ -221,3 +221,69 @@ p {
   font-size: 1.5rem;
   color: #50c3af;
 }
+/* Feedback */
+.feedback {
+  padding-top: 8rem;
+  background: #eeeeef;
+}
+.feedback-box-title {
+  position: relative;
+  padding: 0 0 2.5rem 4rem;
+  width: 70%;
+  border-bottom: 2px solid #e8e8e9;
+}
+.feedback-box-title h1 {
+  font-size: 2.8rem;
+}
+.feedback-box .left-title::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 0.6rem;
+  left: 0rem;
+  background: url(../img/feedback/fb-1.png) no-repeat center;
+}
+.feedback-box .rigth-title::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 0.6rem;
+  left: 0rem;
+  background: url(../img/feedback/fb-2.png) no-repeat center;
+}
+.feedback-box-text {
+  margin: 3rem 0 3rem 0;
+}
+.feedback-box-button {
+  margin-top: 5rem;
+}
+.feedback-box-button button {
+  padding: 1rem 2rem;
+  text-transform: unset;
+  border-radius: 40px;
+}
+.themeforest-box-title {
+  padding-bottom: 2.5rem;
+  width: 70%;
+  border-bottom: 2px solid #e8e8e9;
+}
+.themeforest-box-text {
+  margin: 3rem 0 3rem 0;
+}
+.themeforest-box-button {
+  margin-top: 5rem;
+}
+.themeforest-box-button button {
+  padding: 1.5rem 3rem;
+  background: #d2d5da;
+  text-transform: unset;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.themeforest-box-button button:hover {
+  background: #50c3af;
+}

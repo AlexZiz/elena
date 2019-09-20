@@ -284,3 +284,80 @@ button {
     }
   }
 }
+
+/* Feedback */
+.feedback {
+  padding-top: 8rem;
+  background: @bg-gray;
+  &-box {
+    &-title {
+      position: relative;
+      padding: 0 0 2.5rem 4rem;
+      width: 70%;
+      border-bottom: 2px solid #e8e8e9;
+      h1 {
+        font-size: 2.8rem;
+      }
+    }
+    .left-title{
+      &::before {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        top: 0.6rem;
+        left: 0rem;
+        background: url(../img/feedback/fb-1.png) no-repeat center;
+      }
+    }
+    .rigth-title{
+      &::before {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        top: 0.6rem;
+        left: 0rem;
+        background: url(../img/feedback/fb-2.png) no-repeat center;
+      }
+    }
+    &-text {
+      margin: 3rem 0 3rem 0;
+    }
+    &-button {
+      margin-top: 5rem;
+      button {
+        padding: 1rem 2rem;
+        text-transform: unset;
+        border-radius: 40px;
+      }
+    }
+  }
+}
+
+.themeforest {
+  &-box {
+    &-title {
+      padding-bottom: 2.5rem;
+      width: 70%;
+      border-bottom: 2px solid #e8e8e9;
+    }
+    &-text {
+      margin: 3rem 0 3rem 0;
+    }
+    &-button {
+      margin-top: 5rem;
+      button {
+        padding: 1.5rem 3rem;
+        background: #d2d5da;
+        text-transform: unset;
+        transition: 0.5s;
+        &:hover {
+          background: @btn-color;
+        };
+      }
+    }
+  }
+}
