@@ -199,7 +199,7 @@ button {
     &-title {
       margin-top: 3rem;
       padding-bottom: 2rem;
-      border-bottom: 2px solid #e2e3e4;
+      border-bottom: 2px solid #e8e8e9;
     }
     &-text {
       margin-top: 3rem;
@@ -215,7 +215,9 @@ button {
   }
   &-signature{
     &-title {
-      padding: 4rem 0 5rem 0;
+      margin-bottom: 4rem;
+      padding: 4rem 0 3rem 0;
+      border-bottom: 2px solid #e8e8e9;
     }
     &-text {
       padding-bottom: 3rem; 
@@ -361,6 +363,60 @@ button {
         &:hover {
           background: @btn-color;
         }
+      }
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  background: @bg-green;
+  &-title {
+    margin: 5rem 0 9rem 0;
+    width: 100%;
+    text-align: center;
+    &::before {
+      content: ' ';
+      position: absolute;
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      left: 36%;
+      background: url(../img/footer/title-icon.png) no-repeat center;
+      background-size: cover;
+    }
+    h1 {
+      color:@light;
+      .PT-Sans;
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+  }
+  &-img {
+    margin-bottom: 10rem;
+  }
+  &-copyright {
+    padding: 2rem 0 1.5rem 0;
+    background: @light;
+    span {
+      .bold;
+    }
+    &-social {
+      float: right;
+      a {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 0.2rem;
+      }
+      .google {
+        background: url(../img/footer/social/s-icon-google.png) no-repeat center;
+      }
+      .twitter {
+        background: url(../img/footer/social/s-icon-twitter.png) no-repeat center;
+      }
+      .facebook {
+        background: url(../img/footer/social/s-icon-facebook.png) no-repeat center;
       }
     }
   }

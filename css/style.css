@@ -148,7 +148,7 @@ p {
 .advantages-box-title {
   margin-top: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 2px solid #e2e3e4;
+  border-bottom: 2px solid #e8e8e9;
 }
 .advantages-box-text {
   margin-top: 3rem;
@@ -161,7 +161,9 @@ p {
   opacity: 0.7;
 }
 .possibility-signature-title {
-  padding: 4rem 0 5rem 0;
+  margin-bottom: 4rem;
+  padding: 4rem 0 3rem 0;
+  border-bottom: 2px solid #e8e8e9;
 }
 .possibility-signature-text {
   padding-bottom: 3rem;
@@ -290,4 +292,57 @@ p {
 }
 .themeforest-box-button button:hover {
   background: #50c3af;
+}
+/* Footer */
+.footer {
+  background: #50c3af;
+}
+.footer-title {
+  margin: 5rem 0 9rem 0;
+  width: 100%;
+  text-align: center;
+}
+.footer-title::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  left: 36%;
+  background: url(../img/footer/title-icon.png) no-repeat center;
+  background-size: cover;
+}
+.footer-title h1 {
+  color: #ffffff;
+  font-family: 'PT Sans';
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.footer-img {
+  margin-bottom: 10rem;
+}
+.footer-copyright {
+  padding: 2rem 0 1.5rem 0;
+  background: #ffffff;
+}
+.footer-copyright span {
+  font-weight: bold;
+}
+.footer-copyright-social {
+  float: right;
+}
+.footer-copyright-social a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.2rem;
+}
+.footer-copyright-social .google {
+  background: url(../img/footer/social/s-icon-google.png) no-repeat center;
+}
+.footer-copyright-social .twitter {
+  background: url(../img/footer/social/s-icon-twitter.png) no-repeat center;
+}
+.footer-copyright-social .facebook {
+  background: url(../img/footer/social/s-icon-facebook.png) no-repeat center;
 }
