@@ -151,35 +151,40 @@ button {
   h1 {
    font-size: 4rem;
   }
+ }
   &-text {
-    position: relative;
-    margin-top: 4rem;
-    margin-bottom: 8rem;
-    font-size: 1.4rem;
-    &::after {
-      content: ' ';
-      display: block;
-      position: absolute;
-      top: 32%;
-      left:63%;
-      width: 15rem;
-      height: 0.4rem;
-      background: #50c3af;
-      opacity: 0.3;
+   margin-top: 4rem;
+   margin-bottom: 8rem;
+   font-size: 1.4rem;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: bold;
+   &::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 32%;
+    left:63%;
+    width: 15rem;
+    height: 0.4rem;
+    background: #50c3af;
+    opacity: 0.3;
     }
     &::before {
-      content: ' ';
-      display: block;
-      position: absolute;
-      top: 32%;
-      left:24%;
-      width: 15rem;
-      height: 0.4rem;
-      background: #50c3af;
-      opacity: 0.3;
+     content: ' ';
+     display: block;
+     position: absolute;
+     top: 32%;
+     left:24%;
+     width: 15rem;
+     height: 0.4rem;
+     background: #50c3af;
+     opacity: 0.3;
     }
+  p {
+    color:@light;
+   }
   }
- }
  &-button {
    width: 100%;
    text-align: center;
@@ -210,23 +215,27 @@ button {
 /* Possibility */
 .possibility {
   background: @bg-light;
-  img {
-    opacity: 0.7;
-  }
-  &-signature{
-    &-title {
-      margin-bottom: 4rem;
-      padding: 4rem 0 3rem 0;
-      border-bottom: 2px solid #e8e8e9;
+  &-box {
+    &-img {
+      img {
+        opacity: 0.7;
+      }
     }
-    &-text {
-      padding-bottom: 3rem; 
-    }
-    &-button {
-      button {
-        padding: 1rem 2rem;
-        text-transform: unset;
-        border-radius: 40px;
+    &-signature{
+      &-title {
+        margin-bottom: 4rem;
+        padding: 4rem 0 3rem 0;
+        border-bottom: 2px solid #e8e8e9;
+      }
+      &-text {
+        padding-bottom: 3rem; 
+      }
+      &-button {
+        button {
+          padding: 1rem 2rem;
+          text-transform: unset;
+          border-radius: 40px;
+        }
       }
     }
   }
@@ -418,6 +427,60 @@ button {
       .facebook {
         background: url(../img/footer/social/s-icon-facebook.png) no-repeat center;
       }
+    }
+  }
+}
+
+/* Адаптация */
+
+@media (max-width: 1200px) {
+  .header-text {
+    &::after {
+      left:65%;
+      width: 10rem;
+    }
+    &::before {
+      left:25%;
+      width: 10rem;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .header-text {
+    &::after {
+      left:67%;
+      width: 5rem;
+    }
+    &::before {
+      left:26%;
+      width: 5rem;
+    }
+  }
+  .possibility {
+    margin-top: 0rem;
+    &-box {
+      &-img {
+        margin-top: 4rem;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .header-text {
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 396px) {
+  .header-title {
+    h1 {
+      font-size: 3rem;
     }
   }
 }

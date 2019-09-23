@@ -104,13 +104,15 @@ p {
 .header-title h1 {
   font-size: 4rem;
 }
-.header-title-text {
-  position: relative;
+.header-text {
   margin-top: 4rem;
   margin-bottom: 8rem;
   font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
 }
-.header-title-text::after {
+.header-text::after {
   content: ' ';
   display: block;
   position: absolute;
@@ -121,7 +123,7 @@ p {
   background: #50c3af;
   opacity: 0.3;
 }
-.header-title-text::before {
+.header-text::before {
   content: ' ';
   display: block;
   position: absolute;
@@ -131,6 +133,9 @@ p {
   height: 0.4rem;
   background: #50c3af;
   opacity: 0.3;
+}
+.header-text p {
+  color: #ffffff;
 }
 .header-button {
   width: 100%;
@@ -157,18 +162,18 @@ p {
 .possibility {
   background: #f5f5f5;
 }
-.possibility img {
+.possibility-box-img img {
   opacity: 0.7;
 }
-.possibility-signature-title {
+.possibility-box-signature-title {
   margin-bottom: 4rem;
   padding: 4rem 0 3rem 0;
   border-bottom: 2px solid #e8e8e9;
 }
-.possibility-signature-text {
+.possibility-box-signature-text {
   padding-bottom: 3rem;
 }
-.possibility-signature-button button {
+.possibility-box-signature-button button {
   padding: 1rem 2rem;
   text-transform: unset;
   border-radius: 40px;
@@ -345,4 +350,45 @@ p {
 }
 .footer-copyright-social .facebook {
   background: url(../img/footer/social/s-icon-facebook.png) no-repeat center;
+}
+/* Адаптация */
+@media (max-width: 1200px) {
+  .header-text::after {
+    left: 65%;
+    width: 10rem;
+  }
+  .header-text::before {
+    left: 25%;
+    width: 10rem;
+  }
+}
+@media (max-width: 991px) {
+  .header-text::after {
+    left: 67%;
+    width: 5rem;
+  }
+  .header-text::before {
+    left: 26%;
+    width: 5rem;
+  }
+  .possibility {
+    margin-top: 0rem;
+  }
+  .possibility-box-img {
+    margin-top: 4rem;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .header-text::after {
+    display: none;
+  }
+  .header-text::before {
+    display: none;
+  }
+}
+@media (max-width: 396px) {
+  .header-title h1 {
+    font-size: 3rem;
+  }
 }
