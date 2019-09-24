@@ -45,8 +45,14 @@ button {
   font-size: 1.5rem;
   font-family: 'Ubuntu';
   border: none;
+  outline: none;
   background: #50c3af;
   border-radius: 50px;
+}
+button-:active,
+button-:focus {
+  outline: none;
+  border-style: none;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -352,6 +358,21 @@ p {
   background: url(../img/footer/social/s-icon-facebook.png) no-repeat center;
 }
 /* Адаптация */
+@media (max-width: 1650px) {
+  .footer-title::before {
+    left: 35%;
+  }
+}
+@media (max-width: 1550px) {
+  .footer-title::before {
+    left: 33%;
+  }
+}
+@media (max-width: 1350px) {
+  .footer-title::before {
+    left: 31%;
+  }
+}
 @media (max-width: 1200px) {
   .header-text::after {
     left: 65%;
@@ -360,6 +381,9 @@ p {
   .header-text::before {
     left: 25%;
     width: 10rem;
+  }
+  .footer-title::before {
+    display: none;
   }
 }
 @media (max-width: 991px) {
@@ -423,6 +447,9 @@ p {
   .themeforest-box-title {
     padding-top: 3rem;
   }
+  .footer-copyright {
+    text-align: center;
+  }
 }
 @media (max-width: 767px) {
   .header-text::after {
@@ -447,6 +474,9 @@ p {
     width: 100%;
     padding: 3rem 0 1rem 0;
   }
+  .footer-img {
+    text-align: center;
+  }
 }
 @media (max-width: 576px) {
   .suppored-text {
@@ -459,6 +489,10 @@ p {
   }
 }
 @media (max-width: 450px) {
+  .header-button button {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+  }
   .feedback-box .left-title::before {
     left: 10%;
   }
@@ -475,5 +509,8 @@ p {
   }
   .feedback-box .rigth-title::before {
     display: none;
+  }
+  .footer-title {
+    padding: 0 2rem 0 2rem;
   }
 }
